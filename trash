@@ -1,0 +1,46 @@
+
+//const Player = function(data) {
+//	data = data || {}
+//	this.tag = m.prop(data.tag || "")
+//}
+//const Setup = {
+//	controller: function() {
+//		this.store = store
+//	},
+//	view: function(ctrl) {
+//		return m('div#setup', [
+//			m.component(PlayerForm),
+//			m.component(PlayerList, ctrl.store)
+//		])
+//	}
+//}
+//const PlayerForm = {
+//	controller: function() {
+//		this.dispatch = m.prop(store.dispatch)
+//	},
+//	view: function(ctrl) {
+//		return m('form#playerForm', {
+//			onsubmit: e => {
+//				e.preventDefault()
+//				store.dispatch(addPlayer('bee'))
+//			}
+//		}, [
+//			m('input#playerInput'),
+//			m('button#playerAdd[type=submit]', '+')
+//		])
+//	}
+//}
+//
+//const PlayerList = {
+//	controller: function(args) {
+//		args.subscribe(PlayerList.view)
+//		this.players = args.getState().players
+//	},
+//	view: function(ctrl) {
+//		return m('ul#playerList', [
+//			ctrl.players.map(player => m('li', player.tag))
+//		])
+//	}
+//}
+//
+//m.mount(document.body, Setup)
