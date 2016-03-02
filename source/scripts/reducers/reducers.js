@@ -6,7 +6,7 @@ function sets(state = [], action) {
 		case ADD_SET:
 			return [...state,
 				{
-					score: action.score,
+					matchup: action.matchup,
 					completed: false
 				}
 			]
